@@ -1,0 +1,1229 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Jasa Fotocopy & Printing - Cepat, Murah, Berkualitas</title>
+  <meta name="description"
+    content="Jasa fotocopy, laminating, press, jilid buku, print, dan scan terpercaya. Harga terjangkau, hasil berkualitas, proses cepat. Pesan langsung via WhatsApp!">
+  <meta name="keywords" content="fotocopy, laminating, press, jilid buku, print, scan, cetak, printing, jasa cetak">
+
+  <!-- Favicons -->
+  <link href="assets/img/icon.jpg" rel="icon">
+  <link href="assets/img/icon.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- Custom CSS File -->
+  <link href="assets/css/custom.css" rel="stylesheet">
+
+  <!-- Custom Inline Styles -->
+  <style>
+    /* ===== Unified Service Cards ===== */
+    .svc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px
+    }
+
+    .svc-card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, .07);
+      transition: transform .3s, box-shadow .3s;
+      display: flex;
+      flex-direction: column
+    }
+
+    .svc-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, .12)
+    }
+
+    .svc-card .svc-icon {
+      width: 100%;
+      padding: 28px 24px;
+      text-align: center;
+      color: #fff;
+      font-size: 2.4rem
+    }
+
+    .svc-card .svc-body {
+      padding: 20px 24px;
+      flex: 1
+    }
+
+    .svc-card .svc-body h4 {
+      font-weight: 700;
+      margin-bottom: 8px;
+      font-size: 1.15rem
+    }
+
+    .svc-card .svc-body p {
+      font-size: .92rem;
+      color: #555;
+      margin-bottom: 14px
+    }
+
+    .svc-card .svc-body .svc-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px
+    }
+
+    .svc-card .svc-body .svc-tags span {
+      background: #f0f4ff;
+      color: #2563eb;
+      font-size: .78rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: 500
+    }
+
+    .svc-card .svc-footer {
+      padding: 0 24px 20px;
+      text-align: center
+    }
+
+    .btn-cart {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: #fff;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: .88rem;
+      cursor: pointer;
+      transition: all .3s;
+      text-decoration: none;
+      width: 100%;
+      justify-content: center
+    }
+
+    .btn-cart:hover {
+      background: linear-gradient(135deg, #1d4ed8, #2563eb);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(37, 99, 235, .35);
+      color: #fff
+    }
+
+    .btn-cart i {
+      font-size: 1.1rem
+    }
+
+    /* Gradient backgrounds */
+    .bg-gradient-1 {
+      background: linear-gradient(135deg, #2563eb, #3b82f6)
+    }
+
+    .bg-gradient-2 {
+      background: linear-gradient(135deg, #7c3aed, #8b5cf6)
+    }
+
+    .bg-gradient-3 {
+      background: linear-gradient(135deg, #059669, #10b981)
+    }
+
+    .bg-gradient-4 {
+      background: linear-gradient(135deg, #ea580c, #f97316)
+    }
+
+    .bg-gradient-5 {
+      background: linear-gradient(135deg, #0891b2, #22d3ee)
+    }
+
+    .bg-gradient-6 {
+      background: linear-gradient(135deg, #4338ca, #6366f1)
+    }
+
+    .bg-gradient-7 {
+      background: linear-gradient(135deg, #be185d, #ec4899)
+    }
+
+    .bg-gradient-8 {
+      background: linear-gradient(135deg, #b45309, #f59e0b)
+    }
+
+    .bg-gradient-9 {
+      background: linear-gradient(135deg, #166534, #22c55e)
+    }
+
+    /* ===== Floating Cart Button ===== */
+    .cart-float {
+      position: fixed;
+      bottom: 100px;
+      right: 15px;
+      z-index: 9999;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      box-shadow: 0 4px 18px rgba(37, 99, 235, .4);
+      transition: transform .25s, box-shadow .25s;
+      cursor: pointer;
+      border: none
+    }
+
+    .cart-float:hover {
+      transform: scale(1.12);
+      box-shadow: 0 6px 28px rgba(37, 99, 235, .55)
+    }
+
+    .cart-badge {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      background: #ef4444;
+      color: #fff;
+      font-size: .7rem;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      border: 2px solid #fff
+    }
+
+    .cart-badge:empty,
+    .cart-badge[data-count="0"] {
+      display: none
+    }
+
+    /* ===== Cart Drawer ===== */
+    .cart-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, .45);
+      z-index: 10000;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .3s
+    }
+
+    .cart-overlay.open {
+      opacity: 1;
+      visibility: visible
+    }
+
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      right: -420px;
+      width: 400px;
+      max-width: 90vw;
+      height: 100vh;
+      background: #fff;
+      z-index: 10001;
+      transition: right .35s cubic-bezier(.4, 0, .2, 1);
+      display: flex;
+      flex-direction: column;
+      box-shadow: -8px 0 30px rgba(0, 0, 0, .12)
+    }
+
+    .cart-drawer.open {
+      right: 0
+    }
+
+    .cart-drawer-header {
+      padding: 20px 24px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .cart-drawer-header h5 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.15rem
+    }
+
+    .cart-drawer-header .close-cart {
+      background: none;
+      border: none;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: #666;
+      transition: color .2s
+    }
+
+    .cart-drawer-header .close-cart:hover {
+      color: #ef4444
+    }
+
+    .cart-drawer-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 24px
+    }
+
+    .cart-drawer-body .empty-cart {
+      text-align: center;
+      padding: 40px 0;
+      color: #aaa
+    }
+
+    .cart-drawer-body .empty-cart i {
+      font-size: 3rem;
+      display: block;
+      margin-bottom: 12px
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid #f1f1f1
+    }
+
+    .cart-item .ci-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.1rem;
+      flex-shrink: 0
+    }
+
+    .cart-item .ci-info {
+      flex: 1
+    }
+
+    .cart-item .ci-info h6 {
+      margin: 0;
+      font-size: .9rem;
+      font-weight: 600
+    }
+
+    .cart-item .ci-info small {
+      color: #888
+    }
+
+    .cart-item .ci-qty {
+      display: flex;
+      align-items: center;
+      gap: 6px
+    }
+
+    .cart-item .ci-qty button {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      background: #fff;
+      cursor: pointer;
+      font-size: .9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .2s
+    }
+
+    .cart-item .ci-qty button:hover {
+      background: #2563eb;
+      color: #fff;
+      border-color: #2563eb
+    }
+
+    .cart-item .ci-qty span {
+      min-width: 20px;
+      text-align: center;
+      font-weight: 600;
+      font-size: .9rem
+    }
+
+    .cart-item .ci-remove {
+      background: none;
+      border: none;
+      color: #ccc;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: color .2s
+    }
+
+    .cart-item .ci-remove:hover {
+      color: #ef4444
+    }
+
+    .cart-drawer-footer {
+      padding: 20px 24px;
+      border-top: 1px solid #eee
+    }
+
+    .cart-drawer-footer .cart-total {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 16px
+    }
+
+    .btn-checkout {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all .3s;
+      text-align: center
+    }
+
+    .btn-checkout:hover {
+      background: linear-gradient(135deg, #1d4ed8, #2563eb);
+      box-shadow: 0 4px 14px rgba(37, 99, 235, .35)
+    }
+
+    /* ===== Map Section ===== */
+    .map-section {
+      padding: 60px 0;
+    }
+
+    .map-wrapper {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, .12);
+      background: #fff;
+    }
+
+    .map-wrapper #map {
+      width: 100%;
+      height: 450px;
+      z-index: 1;
+    }
+
+    .map-info-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, .08);
+      height: 100%;
+    }
+
+    .map-info-card h4 {
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #1e293b;
+      font-size: 1.3rem;
+    }
+
+    .map-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .map-info-item .info-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .map-info-item .info-text h6 {
+      margin: 0 0 4px;
+      font-weight: 600;
+      font-size: .95rem;
+      color: #334155;
+    }
+
+    .map-info-item .info-text p {
+      margin: 0;
+      font-size: .88rem;
+      color: #64748b;
+    }
+
+    .map-coords {
+      background: #f0f4ff;
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-top: 16px;
+    }
+
+    .map-coords p {
+      margin: 0;
+      font-size: .85rem;
+      color: #475569;
+    }
+
+    .map-coords span {
+      font-weight: 700;
+      color: #2563eb;
+    }
+
+    .btn-directions {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #2563eb, #3b82f6);
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: .9rem;
+      cursor: pointer;
+      transition: all .3s;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .btn-directions:hover {
+      background: linear-gradient(135deg, #1d4ed8, #2563eb);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(37, 99, 235, .35);
+      color: #fff;
+    }
+
+    @media (max-width: 991px) {
+      .map-wrapper #map {
+        height: 300px;
+      }
+
+      .map-info-card {
+        margin-top: 20px;
+      }
+    }
+
+    /* ===== Pricing table styles ===== */
+    .pricing-table {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, .08);
+      transition: transform .3s
+    }
+
+    .pricing-table:hover {
+      transform: translateY(-5px)
+    }
+
+    .pricing-table .pricing-header {
+      padding: 28px 24px;
+      text-align: center;
+      color: #fff
+    }
+
+    .pricing-table .pricing-header h4 {
+      margin-bottom: 6px;
+      font-weight: 700
+    }
+
+    .pricing-table .pricing-header p {
+      opacity: .85;
+      margin: 0;
+      font-size: .9rem
+    }
+
+    .pricing-table .pricing-body {
+      padding: 24px
+    }
+
+    .pricing-table .pricing-body ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0
+    }
+
+    .pricing-table .pricing-body ul li {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px dashed #e8e8e8;
+      font-size: .95rem
+    }
+
+    .pricing-table .pricing-body ul li:last-child {
+      border-bottom: none
+    }
+
+    .pricing-table .pricing-body ul li .item-name {
+      font-weight: 500
+    }
+
+    .pricing-table .pricing-body ul li .item-price {
+      font-weight: 700;
+      color: var(--accent-color, #2563eb)
+    }
+  </style>
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header fixed-top">
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <h1 class="sitename"><img src="assets/img/icon.jpg" /> Mudah Bersaudara</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Beranda</a></li>
+            <li><a href="#home-about">Tentang Kami</a></li>
+            <li><a href="#layanan">Layanan</a></li>
+            <li><a href="#harga">Harga</a></li>
+            <li><a href="#lokasi">Lokasi</a></li>
+            <li><a href="#call-to-action">Kontak</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content mt-2">
+              <div class="trust-badges mb-4 mt-4" data-aos="fade-right" data-aos-delay="200">
+                <div class="badge-item">
+                  <i class="bi bi-lightning-charge-fill"></i>
+                  <span>Proses Cepat</span>
+                </div>
+                <div class="badge-item">
+                  <i class="bi bi-cash-coin"></i>
+                  <span>Harga Terjangkau</span>
+                </div>
+                <div class="badge-item">
+                  <i class="bi bi-star-fill"></i>
+                  <span>Kualitas Terbaik</span>
+                </div>
+              </div>
+
+              <h1 data-aos="fade-right" data-aos-delay="300">
+                Solusi <span class="highlight">Fotocopy & Printing</span> Terpercaya
+              </h1>
+
+              <p class="hero-description" data-aos="fade-right" data-aos-delay="400">
+                Kami menyediakan layanan Fotocopy, Laminating, Press, Print, Scan, Jilid Buku, Undangan Nikah,
+                Undangan Tahlil, serta jual beli ATK dengan harga terjangkau dan hasil berkualitas tinggi.
+              </p>
+
+              <div class="hero-actions" data-aos="fade-right" data-aos-delay="600">
+                <a href="https://wa.me/6285731889590?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20fotocopy%20%26%20printing"
+                  target="_blank" class="btn btn-primary" style="background:#25D366;border-color:#25D366;">
+                  <i class="bi bi-whatsapp me-2"></i>Chat WhatsApp
+                </a>
+                <a href="#harga" class="btn btn-outline">
+                  <i class="bi bi-tag me-2"></i>
+                  Lihat Harga
+                </a>
+              </div>
+
+              <div class="emergency-contact" data-aos="fade-right" data-aos-delay="700">
+                <div class="emergency-icon">
+                  <i class="bi bi-clock-fill"></i>
+                </div>
+                <div class="emergency-info">
+                  <small>Jam Operasional</small>
+                  <strong>Senin - Ahad: 07.00 - 22.00 WIB</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+              <div class="main-image mt-4">
+                <img src="assets/img/fc/4.jpg" alt="Jasa Fotocopy & Printing Center" class="img-fluid">
+              </div>
+              <div class="background-elements">
+                <div class="element element-1"></div>
+                <div class="element element-2"></div>
+                <div class="element element-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Home About Section -->
+    <section id="home-about" class="home-about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-content">
+              <h2 class="section-heading">Mitra Cetak & Dokumen Anda</h2>
+              <p class="lead-text">Lebih dari satu dekade kami melayani kebutuhan cetak dan dokumen masyarakat dengan
+                komitmen terhadap kualitas, kecepatan, dan harga yang bersahabat.</p>
+
+              <p>Mulai dari fotocopy hitam-putih hingga cetak warna premium, laminating dokumen penting, jilid skripsi
+                dan laporan, hingga scan berkualitas tinggi — semua tersedia di satu tempat. Kami menggunakan mesin
+                terbaru untuk memastikan hasil cetak tajam dan tahan lama.</p>
+
+              <div class="cta-section" style="width:50%">
+                <a href="https://wa.me/6285731889590?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20fotocopy%20%26%20printing"
+                  target="_blank" class="btn-cart" style="background:#25D366;border-color:#25D366;">
+                  <i class="bi bi-whatsapp me-2"></i> Chat WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-visual">
+              <div class="main-image">
+                <img src="assets/img/fc/1.jpg" alt="Interior toko fotocopy" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Home About Section -->
+
+    <!-- Layanan / Services Section -->
+    <section id="layanan" class="section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Layanan Kami</h2>
+        <p>Berbagai jasa fotocopy, printing, dan kebutuhan dokumen Anda tersedia di satu tempat</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="svc-grid">
+
+          <!-- 1. Fotocopy -->
+          <div class="svc-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="svc-icon bg-gradient-1"><i class="bi bi-files"></i></div>
+            <div class="svc-body">
+              <h4>📄 Fotocopy</h4>
+              <p>Fotocopy hitam-putih &amp; warna dengan kualitas tajam. Berbagai ukuran kertas dari A5 hingga A3.</p>
+              <div class="svc-tags">
+                <span>Hitam-Putih</span><span>Warna</span><span>A4 / F4 / A3</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Laminating -->
+          <div class="svc-card" data-aos="zoom-in" data-aos-delay="150">
+            <div class="svc-icon bg-gradient-2"><i class="bi bi-shield-check"></i></div>
+            <div class="svc-body">
+              <h4>🛡️ Laminating</h4>
+              <p>Laminating glossy &amp; doff untuk ijazah, sertifikat, KTP, dan dokumen penting lainnya.</p>
+              <div class="svc-tags">
+                <span>Glossy</span><span>Doff</span><span>Berbagai Ukuran</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Press -->
+          <div class="svc-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="svc-icon bg-gradient-4"><i class="bi bi-fire"></i></div>
+            <div class="svc-body">
+              <h4>🔥 Press / Heat Press</h4>
+              <p>Cetak di kaos, mug, topi, bantal, dan media lainnya dengan teknologi heat press.</p>
+              <div class="svc-tags">
+                <span>Kaos</span><span>Mug</span><span>Topi</span><span>Bantal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Print -->
+          <div class="svc-card" data-aos="zoom-in" data-aos-delay="250">
+            <div class="svc-icon bg-gradient-5"><i class="bi bi-printer"></i></div>
+            <div class="svc-body">
+              <h4>🖨️ Print / Cetak</h4>
+              <p>Print dokumen, foto, poster, dan banner berkualitas tinggi. B/W maupun warna.</p>
+              <div class="svc-tags">
+                <span>Dokumen</span><span>Foto</span><span>Poster</span><span>Banner</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Scan -->
+          <div class="svc-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="svc-icon bg-gradient-6"><i class="bi bi-upc-scan"></i></div>
+            <div class="svc-body">
+              <h4>📡 Scan Dokumen</h4>
+              <p>Scan ke format digital (PDF, JPG, PNG). Resolusi tinggi, kirim via email atau flashdisk.</p>
+              <div class="svc-tags">
+                <span>PDF</span><span>JPG</span><span>Resolusi Tinggi</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Jilid Buku -->
+          <div class="svc-card" data-aos="zoom-in" data-aos-delay="350">
+            <div class="svc-icon bg-gradient-3"><i class="bi bi-book"></i></div>
+            <div class="svc-body">
+              <h4>📚 Jilid Buku</h4>
+              <p>Jilid profesional untuk skripsi, tesis, laporan, dan proposal. Spiral, hard cover, soft cover.</p>
+              <div class="svc-tags">
+                <span>Spiral</span><span>Hard Cover</span><span>Soft Cover</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Undangan -->
+          <div class="svc-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="svc-icon bg-gradient-8"><i class="bi bi-envelope-paper"></i></div>
+            <div class="svc-body">
+              <h4>📜 Undangan</h4>
+              <p>Cetak undangan tahlil, pernikahan dengan berbagai desain menarik dan bahan premium.</p>
+              <div class="svc-tags">
+                <span>Desain Elegan</span><span>Bahan Premium</span><span>Custom</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Jual Beli ATK -->
+          <div class="svc-card" data-aos="zoom-in" data-aos-delay="500">
+            <div class="svc-icon bg-gradient-9"><i class="bi bi-pencil"></i></div>
+            <div class="svc-body">
+              <h4>✏️ Alat Tulis Kantor (ATK)</h4>
+              <p>Tersedia berbagai kebutuhan ATK: pulpen, pensil, penghapus, map, buku tulis, kertas, dan lainnya.</p>
+              <div class="svc-tags">
+                <span>Pulpen</span><span>Buku</span><span>Kertas</span><span>Map</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- End svc-grid -->
+      </div>
+
+    </section><!-- /Layanan Section -->
+
+    <!-- Harga / Pricing Section -->
+    <section id="harga" class="find-a-doctor section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Daftar Harga</h2>
+        <p>Harga terjangkau dan transparan untuk semua layanan kami</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- Pricing: Fotocopy & Print -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-table">
+              <div class="pricing-header bg-gradient-1">
+                <h4>📄 Fotocopy & Print</h4>
+                <p>Harga per lembar</p>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <li>
+                    <span class="item-name">Fotocopy B/W A4</span>
+                    <span class="item-price">Rp 200</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Fotocopy B/W F4</span>
+                    <span class="item-price">Rp 250</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Fotocopy Warna A4</span>
+                    <span class="item-price">Rp 1.500</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Print B/W A4</span>
+                    <span class="item-price">Rp 500</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Print Warna A4</span>
+                    <span class="item-price">Rp 2.000</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Cetak Foto 4R</span>
+                    <span class="item-price">Rp 3.000</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Pricing: Laminating & Scan -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-table">
+              <div class="pricing-header bg-gradient-2">
+                <h4>🛡️ Laminating & Scan</h4>
+                <p>Harga per item</p>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <li>
+                    <span class="item-name">Laminating KTP/Kartu</span>
+                    <span class="item-price">Rp 3.000</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Laminating A4</span>
+                    <span class="item-price">Rp 5.000</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Laminating F4/Folio</span>
+                    <span class="item-price">Rp 6.000</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Laminating A3</span>
+                    <span class="item-price">Rp 10.000</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Scan Dokumen (per halaman)</span>
+                    <span class="item-price">Rp 2.000</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Scan + Kirim Email</span>
+                    <span class="item-price">Rp 3.000</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Pricing: Jilid & Press -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-table">
+              <div class="pricing-header bg-gradient-3">
+                <h4>📚 Jilid & Press</h4>
+                <p>Harga per unit</p>
+              </div>
+              <div class="pricing-body">
+                <ul>
+                  <li>
+                    <span class="item-name">Jilid Spiral</span>
+                    <span class="item-price">Rp 8.000</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Jilid Soft Cover</span>
+                    <span class="item-price">Rp 15.000</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Jilid Hard Cover</span>
+                    <span class="item-price">Rp 35.000</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Press Kaos (per pcs)</span>
+                    <span class="item-price">Rp 25.000</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Press Mug</span>
+                    <span class="item-price">Rp 20.000</span>
+                  </li>
+                  <li>
+                    <span class="item-name">Press Topi</span>
+                    <span class="item-price">Rp 18.000</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+          <p class="text-muted mb-3"><i class="bi bi-info-circle me-1"></i> Harga dapat berubah sewaktu-waktu. Untuk
+            harga terbaru dan order dalam jumlah besar, silakan hubungi kami.</p>
+        </div>
+
+      </div>
+
+    </section><!-- /Harga Section -->
+
+    <!-- Lokasi / Map Section -->
+    <section id="lokasi" class="map-section section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Lokasi Kami</h2>
+        <p>Temukan kami dengan mudah — kunjungi langsung toko kami</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4 align-items-stretch">
+
+          <div class="col-lg-8" data-aos="fade-right" data-aos-delay="200">
+            <div class="map-wrapper">
+              <div id="map"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-left" data-aos-delay="300">
+            <div class="map-info-card">
+              <h4>📍 Informasi Lokasi</h4>
+
+              <div class="map-info-item">
+                <div class="info-icon bg-gradient-1">
+                  <i class="bi bi-building"></i>
+                </div>
+                <div class="info-text">
+                  <h6>Mudah Bersaudara</h6>
+                  <p>Fotocopy & Printing</p>
+                </div>
+              </div>
+
+              <div class="map-info-item">
+                <div class="info-icon bg-gradient-3">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="info-text">
+                  <h6>Alamat</h6>
+                  <p>Jl. Kanjeng Sepuh, Sedagaran, Kec. Sidayu, Kabupaten Gresik, Jawa Timur 61153</p>
+                </div>
+              </div>
+
+              <div class="map-info-item">
+                <div class="info-icon bg-gradient-5">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <div class="info-text">
+                  <h6>Jam Operasional</h6>
+                  <p>Senin - Ahad: 07.00 - 22.00 WIB</p>
+                </div>
+              </div>
+
+              <!-- <div class="map-coords">
+                <p>🌐 Koordinat GPS:</p>
+                <p>Latitude: <span id="display-lat"></span></p>
+                <p>Longitude: <span id="display-lng"></span></p>
+              </div> -->
+
+              <a href="https://maps.app.goo.gl/oVKGEPkXcFWkt5HJ7" target="_blank" class="btn-directions">
+                <i class="bi bi-sign-turn-right"></i> Buka di Google Maps
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Lokasi Section -->
+
+  </main>
+
+  <footer id="footer" class="footer-16 footer position-relative">
+
+
+
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section light-background"
+      style="padding: 50px 0 50px;margin-bottom: 0px;">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="hero-content">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6">
+              <div class="content-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <h1>Butuh Cetak Cepat? Kunjungi Kami!</h1>
+                <p>Pilih layanan yang Anda butuhkan, tambahkan ke keranjang, dan kami akan segera memprosesnya. Mudah,
+                  cepat, dan berkualitas!</p>
+
+                <div class="cta-wrapper">
+                  <div style="width: 50%;">
+                    <a href="https://wa.me/6285731889590?text=Halo%2C%20saya%20ingin%20memesan%20jasa%20cetak.%20Berikut%20file%20dan%20detailnya%3A"
+                      target="_blank" class="btn-cart" style="font-size:1rem;padding:14px 32px;background:#25D366;">
+                      <i class="bi bi-whatsapp"></i> Chat WhatsApp
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="image-container" data-aos="fade-left" data-aos-delay="300">
+                <img src="assets/img/fc/2.jpg" alt="Tim Fotocopy Center" class="img-fluid">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- <div class="features-section" style="margin-bottom: 60px;padding: 20px 40px;">
+
+          <div class="row g-0">
+
+            <div class="col-lg-4">
+              <div class="feature-block" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon">
+                  <i class="bi bi-lightning-charge"></i>
+                </div>
+                <h3>Proses Kilat</h3>
+                <p>Dokumen Anda diproses dengan cepat menggunakan mesin modern. Hasil bisa langsung jadi saat itu juga!
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="feature-block" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon">
+                  <i class="bi bi-cash-coin"></i>
+                </div>
+                <h3>Harga Bersahabat</h3>
+                <p>Harga transparan dan kompetitif untuk semua layanan. Diskon khusus untuk order dalam jumlah besar!
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="feature-block" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-icon">
+                  <i class="bi bi-award"></i>
+                </div>
+                <h3>Kualitas Terjamin</h3>
+                <p>Mesin terbaru dan bahan berkualitas tinggi memastikan hasil cetak yang tajam, bersih, dan tahan lama.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div> -->
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="bottom-content" data-aos="fade-up" data-aos-delay="300">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6">
+              <div class="copyright">
+                <p>©<span class="sitename">sidayupunya</span>. All rights reserved.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+  <!-- Map Initialization -->
+  <script>
+    (function () {
+      // =========================================================
+      // Koordinat Lokasi — ubah lat & lng di sini sesuai kebutuhan
+      // =========================================================
+      const LOCATION_LAT = -6.9876964;
+      const LOCATION_LNG = 112.5651428;
+      const LOCATION_NAME = 'Mudah Bersaudara';
+      const ZOOM_LEVEL = 17;
+
+      // // Tampilkan koordinat di info card
+      // document.getElementById('display-lat').textContent = LOCATION_LAT;
+      // document.getElementById('display-lng').textContent = LOCATION_LNG;
+
+      // Inisialisasi peta
+      const map = L.map('map').setView([LOCATION_LAT, LOCATION_LNG], ZOOM_LEVEL);
+
+      // Tile layer (OpenStreetMap — gratis, tanpa API key)
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+
+      // Marker lokasi
+      const marker = L.marker([LOCATION_LAT, LOCATION_LNG]).addTo(map);
+      marker.bindPopup(
+        '<div style="text-align:center;min-width:180px">' +
+        '<strong style="font-size:1rem">' + LOCATION_NAME + '</strong><br>' +
+        '<small style="color:#555">Jl. Kanjeng Sepuh, Sedagaran<br>Kec. Sidayu, Kab. Gresik</small><br>' +
+        '<a href="https://maps.app.goo.gl/oVKGEPkXcFWkt5HJ7" target="_blank" ' +
+        'style="display:inline-block;margin-top:8px;padding:6px 16px;background:#2563eb;color:#fff;' +
+        'border-radius:20px;text-decoration:none;font-size:.85rem">Navigasi →</a>' +
+        '</div>'
+      ).openPopup();
+    })();
+  </script>
+
+</body>
+
+</html>
